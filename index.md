@@ -61,8 +61,7 @@ Let's nowe understand the skill folder structure.
 
 
 
-Sources:
-- [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
+Sources: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
 
 
-### Craeted by [Tarun](https://github.com/tarunnsingh).
+### Craeted with by <img src="https://www.dictionary.com/e/wp-content/uploads/2018/09/black-heart.png width="3%"> [Tarun](https://github.com/tarunnsingh).
