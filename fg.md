@@ -13,16 +13,16 @@ Let's get started!
 CLI stands for *Command Line Interface*, upon installation of which you can easily control your workflow using the command prompt without going to the Alexa Console.
 
 As you must have known Alexa development can be done in both NodeJS and Python so download them to your system.  
-- [NodeJS](https://nodejs.org/en/)(*download the one labelled as LTS*)  
-- [Python](https://www.python.org/downloads/release/python-360/)(*This link opens Python 3.6, the most stable and compatible version*)  
+- [NodeJS](https://nodejs.org/en/) (*download the one labelled as LTS*)  
+- [Python](https://www.python.org/downloads/release/python-360/) (*This link opens Python 3.6, the most stable and compatible version*)  
 
-Once done, you can now begin to install the ASK CLI, open the Command Prompt (Windows) or Termial (Linux) and enter the following commands:
+Once done, you can now begin to install the ASK CLI, open the Command Prompt (Windows) or Termial (Linux) and enter the following commands:  
 **Note if any of the commands dosen't run, then open the terminal / CMD as an administrator on Windows or type sudo before your commands in Linux.**
 
-```npm install -g --production windows-build-tools@4.0.0  
+```npm install -g --production windows-build-tools@4.0.0```  
    The above step is required only for windows  
-   npm install -g ask-cli  
-   ask configure```  
+```npm install -g ask-cli```  
+```ask configure```  
 After the above steps you'll be prompted to enter your credentials in your browser, enter them and you've succesfully completed the installation process!
 
 Congrats!  
