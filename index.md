@@ -77,21 +77,15 @@ Type ```git branch``` to see them listed. The highlighted branch will be the cur
 
 ## Developing the Skill
 As decribed above inside your folder structure, go to 'lambda' folder which has the following contents:
-```windows
-If you selected NodeJS
-index.js
-package.json
-util.json
-```
 
-```windows
-If you selected Python
+*If you selected NodeJS*  
+<img src="./images/nodejs-folder-structure.JPG">
 
-```windows
-lambda_function.py
-requirements.txt
-utils.py
-```
+*If you selected Python*  
+<img src="./images/pyhton-folder-structure.JPG">
+
+
+
 
 
 
