@@ -1,15 +1,41 @@
-## Welcome to GitHub Pages
+## Welcome to Alexa Developers Hub
+This page will help you create and develop Alexa Skills and side-by-side also explain the various concepts of coding which you can apply in other development projects too.
 
-You can use the [editor on GitHub](https://github.com/tarunnsingh/alexa-webinars/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### What should I know?
+You should have a Amazon Developer account, if you don't have one [sign up](https://developer.amazon.com/) for it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Excited?
 
-### Markdown
+Let's get started!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Install the Alexa Skills Kit CLI (ASK CLI)
+
+CLI stands for *Command Line Interface*, upon installation of which you can easily control your workflow using the command prompt without going to the Alexa Console.
+
+As you must have known Alexa development can be done in both NodeJS and Python so download them to your system.  
+- [NodeJS](https://nodejs.org/en/)(*download the one labelled as LTS*)  
+- [Python](https://www.python.org/downloads/release/python-360/)(*This link opens Python 3.6, the most stable and compatible version*)  
+
+Once done, you can now begin to install the ASK CLI, open the Command Prompt (Windows) or Termial (Linux) and enter the following commands:
+**Note if any of the commands dosen't run, then open the terminal / CMD as an administrator on Windows or type sudo before your commands in Linux.**
+
+```npm install -g --production windows-build-tools@4.0.0  
+   The above step is required only for windows  
+   npm install -g ask-cli  
+   ask configure  
+```
+After the above steps you'll be prompted to enter your credentials in your browser, enter them and you've succesfully completed the installation process!
+
+Congrats!  
+
+*Let's create a new Skill using the CLI.*  
+
+## Creating a new Skill using ASK CLI
+
+
 
 ```markdown
-Syntax highlighted code block
+Windows
 
 # Header 1
 ## Header 2
