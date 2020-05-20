@@ -22,7 +22,7 @@ Once done, you can now begin to install the ASK CLI, open the Command Prompt (Wi
 ```npm install -g --production windows-build-tools@4.0.0  
    The above step is required only for windows  
    npm install -g ask-cli  
-   ask configure  
+   ask configure
 ```
 After the above steps you'll be prompted to enter your credentials in your browser, enter them and you've succesfully completed the installation process!
 
