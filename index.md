@@ -6,7 +6,7 @@ You should have a Amazon Developer account, if you don't have one [sign up](http
 Excited?  
 Let's get started!
 
-## Install the Alexa Skills Kit CLI (ASK CLI)
+## Install the Alexa Skills Kit CLI (on Alexa-Hosted)
 
 CLI stands for **Command Line Interface**, upon installation of which you can easily control your workflow using the command prompt without going to the Alexa Console.
 
@@ -49,7 +49,7 @@ Next choose a starter template for you skill.
 - Fact skill (Quick sample skill to manage a collection of voice data)
 - High low game (Guess a number high or low using persistent attributes)
 
-Finally, provide a name for your Alexa Skill (you can change this later from Alexa console) and a **folder_name** that will be created on your local system.
+Finally, provide a **skill_name** for your Alexa Skill (you can change this later from Alexa console) and a **folder_name** that will be created on your local system.
 
 Now you will have a project directory (folder) created. Move into that folder by typing:
 ```cd folder_name```
@@ -59,11 +59,43 @@ Here you'll see the following files and folders:
 - lambda/ (folder)
 - ask-resources.json (file)
 
-Let's nowe understand the skill folder structure.
+Now you've succesfully created and deployed your skill. Check your Alexa console. You'll see your skill with name 'skill_name'.  
+
+## (Important) Working with GIT.
+
+In the latest update of ASK CLI we have got GIT integration built-in to work with our Alexa-Hosted Skills.
+In order to work with it you should know a few basics about git. Please get a git refresher by following [this](https://www.youtube.com/watch?v=SWYqp7iY_Tc) video tutorial. 
+
+Okay! so let's proceed further.  
+The 'ask new' command automatically integrates you project with git.
+you can check with this command ```git remote -v```.  
+
+There are 2 branches which are automatically created:
+1. master - for development stage of skill
+2. prod - for live skill
+Type ```git branch``` to see them listed. The highlighted branch will be the current selected branch (master in our case). You can change the branch by ```git checkout <branch name>```. We will work on master and push changes in master brach only, until we reach the stage to deploy our skill.
+
+## Developing the Skill
+As decribed above inside your folder structure, go to 'lambda' folder which has the following contents:
+```windows
+If you selected NodeJS
+index.js
+package.json
+util.json
+```
+
+```windows
+If you selected Python
+
+```windows
+lambda_function.py
+requirements.txt
+utils.py
+```
 
 
 
-Sources: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
+References: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
 
 
-### Craeted with by 💙 [Tarun](https://github.com/tarunnsingh).
+### Created with 💙 by [Tarun](https://github.com/tarunnsingh).

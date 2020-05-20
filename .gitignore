@@ -1,0 +1,4 @@
+/node_modules
+.ask/
+ask-resources.json
+skill.json
