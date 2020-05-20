@@ -25,6 +25,8 @@ After the above steps you'll be prompted to enter your credentials in your brows
 Congrats!  
 *Let's create a new Skill using the CLI.*  
 
+<hr>
+
 <img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg">
 
 ## Creating a new Skill using ASK CLI
@@ -84,10 +86,61 @@ As decribed above inside your folder structure, go to 'lambda' folder which has 
 *If you selected Python*  
 <img src="./images/pyhton-folder-structure.JPG">
 
+This is a basic structure of any project which has an entry point as index.js (NodeJS) or lambda_function.py (Python) and a list of dependencies and meta information which help in runnning the program as in package.json (NodeJS) or requirements.txt (Python).
+
+## Understanding the Code
+In both the SDKs availble the flow control is the same as explained below which handles an Intent named HellowWorldIntent.  
+
+NodeJS  
+```javascript
+   const HelloWorldIntentHandler = {
+   canHandle(handlerInput) {
+      return (
+         Alexa.getRequestType(handlerInput.requestEnvelope) === "IntentRequest" &&
+         Alexa.getIntentName(handlerInput.requestEnvelope) === "HelloWorldIntent"
+      );
+   },
+   handle(handlerInput) {
+      const speakOutput = "Hello World!";
+      return (
+         handlerInput.responseBuilder
+         .speak(speakOutput)
+         .getResponse()
+      );
+   },
+};
+```
+Python  
+```python
+   class HelloWorldIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("HelloWorldIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Hello World!"
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .response
+         )
+```
+The flow control works as follows: First the **can-handle** runs which returns true/false depending upon whether this this request can be handled or not. If returned true then **handle** runs which handles the request and returns a response.
+
+<hr>
+
+## Creating an API Skill
 
 
 
 
+
+
+
+<hr>
 
 References: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
 
