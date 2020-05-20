@@ -25,6 +25,8 @@ After the above steps you'll be prompted to enter your credentials in your brows
 Congrats!  
 *Let's create a new Skill using the CLI.*  
 
+<img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg">
+
 ## Creating a new Skill using ASK CLI
 
 To create new skill type tho following command in the CMD/Terminal:  
@@ -64,4 +66,4 @@ Let's nowe understand the skill folder structure.
 Sources: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
 
 
-### Craeted with by <img src="https://www.dictionary.com/e/wp-content/uploads/2018/09/black-heart.png width="3%"> [Tarun](https://github.com/tarunnsingh).
+### Craeted with by 💙 [Tarun](https://github.com/tarunnsingh).
