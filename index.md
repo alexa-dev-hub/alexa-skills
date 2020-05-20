@@ -6,7 +6,9 @@ You should have a Amazon Developer account, if you don't have one [sign up](http
 Excited?  
 Let's get started!
 
-## Install the Alexa Skills Kit CLI (on Alexa-Hosted)
+## Install the Alexa Skills Kit CLI 
+
+<img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg">
 
 CLI stands for **Command Line Interface**, upon installation of which you can easily control your workflow using the command prompt without going to the Alexa Console.
 
@@ -27,9 +29,7 @@ Congrats!
 
 <hr>
 
-<img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg">
-
-## Creating a new Skill using ASK CLI
+## Creating a new Skill using ASK CLI (on Alexa-Hosted)
 
 To create new skill type tho following command in the CMD/Terminal:  
 ```ask new```
