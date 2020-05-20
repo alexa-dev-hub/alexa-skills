@@ -1,1 +1,1 @@
-# All you need - Amazon Alexa
+# Amazon Alexa Skills - All you need
