@@ -197,7 +197,7 @@ So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to 
 We will extract the first key-value (i.e Total). But before moving to the code part we need to create an interaction model. In your console create an intent named 'TotalCasesIntent' and give some relevent sample utterances of your choice. Click 'Save Model' and then 'Build Model'.
 Your interaction model is ready, let's move to the code now.
 
-## How do we make a call to an API (NodeJS)
+## Call the API using NodeJS (or using [Python](#pointpython))
 
 Making a call to an API requires usage of some additional libraries. We install those libraries with the help of Node Package Manager (npm). We require just one library here named [axios](https://www.npmjs.com/package/axios).
 In you terminal, you are inside your skill's directory ('skill_name' folder), now type the following command to install axios:
@@ -232,7 +232,7 @@ const getData = async () => {
 
 ```javascript
 (response) => {
-  return response.data["Total"];
+  return response.data["Total"]; // has value of total case count
 };
 ```
 
@@ -242,13 +242,24 @@ Okay so now in our 'TotalCasesIntentHandler' when the handle part is called we s
 
 In this way we succesfully return data from our API as Alexa output.
 
-## How do we make a call to an API (Python)
+## <a name="pointpython"></a> Call the API (using Python)
 
 Making a call to an API requires usage of some additional libraries. We install those libraries with the help of 'pip'. We require just one library here named [requests](https://pypi.org/project/requests/).
-In you terminal, you are inside your skill's directory ('skill_name' folder), now type the following command to install axios:
-`pip install requests`. Now we shall add this libraray explicitly in requirements.txt. Add ```requests==2.23.0``` to requirements.txt.
+In you terminal, you are inside your skill's directory ('skill_name' folder), now type the following command to install 'requests': `pip install requests`. Now we shall add this libraray explicitly in requirements.txt. Add ```requests==2.23.0``` to requirements.txt.  
+Now inside our 'handle' method of our intent handler 'TotalcasesIntentHandler', we make a call to the api as follows:  
+```python
+   response = requests.get("https://api.covid19api.com/stats")
+```  
+We then parse the JSON and get the key-value of ['Total'] and finally convert it to a string as follows:  
+```python
+   str(response.json()['Total']) # has value of total case count
+```
+Now we append it to the speakOutput and return the response.
+
+**In this way we easily accomplish the process of making an API requests.**
+
 <hr>
 
-References: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
-
-### Created with 💙 by [Tarun](https://tarunnsingh.netlify.app).
+### Hope this was helpful!
+### Have suggestions? Add a PR in [this](https://github.com/tarunnsingh/alexa-dev-hub) repo.
+### Created with 💙 by [Tarun](https://tarunsingh.netlify.app).
