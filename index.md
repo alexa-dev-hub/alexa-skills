@@ -9,7 +9,7 @@ It is expected that you have a basic knowledge as to how a skill works, what are
 Get a refresher with this video. (Note: The video is a bit old. A few things have changed in the console as of now.)
 
 <figure class="video_container">
-  <iframe src="https://youtube.com/embed/q-mrSBrlDso" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://youtube.com/embed/q-mrSBrlDso" frameborder="0" allowfullscreen="true" width="100%" height="450"> </iframe>
 </figure>
 
 **Excited?**  
@@ -158,7 +158,7 @@ Now here we will to build an Alexa Skill which fetches data from an API and give
 
 Watch this video if you aren't clear what exactly does API mean.
 
-<iframe width="100%" height = "100%" src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
+<iframe  frameborder="0" allowfullscreen="true" width="100%" height="450"src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
 
 So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to get total current cases. The following is the response from the API.
 
@@ -212,7 +212,7 @@ We create a function named getData() which will fetch data from our API.
 
 NodeJS works asynchronously and on promises. If you are new to this concept or need a refresher watch this video.
 
-<iframe src="https://youtube.com/embed/vn3tm0quoqE" height = "100%" width="100%"></iframe>
+<iframe src="https://youtube.com/embed/vn3tm0quoqE" frameborder="0" allowfullscreen="true" width="100%" height="450"></iframe>
 
 Now let's here is our getData() function:
 
