@@ -8,7 +8,9 @@ You should have a Amazon Developer account, if you don't have one [Sign Up](http
 It is expected that you have a basic knowledge as to how a skill works, what are intents and slots, and basic understanding of NodeJS or Python.
 Get a refresher with this video. (Note: The video is a bit old. A few things have changed in the console as of now.)
 
-<iframe src="https://youtube.com/embed/q-mrSBrlDso" ></iframe>
+<figure class="video_container">
+  <iframe src="https://youtube.com/embed/q-mrSBrlDso" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 **Excited?**  
 Let's get started!
