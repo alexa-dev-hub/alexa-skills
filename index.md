@@ -209,7 +209,7 @@ We create a function named getData() which will fetch data from our API.
 
 NodeJS works asynchronously and on promises. If you are new to this concept or need a refresher watch this video.
 
-<iframe src="https://youtube.com/embed/vn3tm0quoqE" height = "100%" width="100%">
+<iframe src="https://youtube.com/embed/vn3tm0quoqE" height = "100%" width="100%"></iframe>
 
 Now let's here is our getData() function:
 
@@ -234,7 +234,7 @@ const getData = async () => {
 ```
 This returns back the total case count value which was present in data with key value of 'Total'. (as we saw earlier).
 
-Okay so now in our 'TotalCasesIntentHandler' when the handle part is called we see we are calling the getData() function. Since this is an asynchronous function we need to *wait* for the response hence we used 'await'. As we used await inside our 'handle' function we need to declare it an asynchronous function by adding the 'async' keyword before it. Finally we append our total case count value to the 'speakOutput' (using [backticks](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) notation) which is then returned by the intent handler.
+Okay so now in our 'TotalCasesIntentHandler' when the handle part is called we see we are calling the getData() function. Since this is an asynchronous function we need to *wait* for the response hence we used 'await'. As we used await inside our 'handle' function we need to declare it an asynchronous function by adding the 'async' keyword before it. Finally we append our total case count value to the 'speakOutput' (using [backticks (`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) notation) which is then returned by the intent handler.
 
 In this way we succesfully return data from our API as Alexa output.
 
