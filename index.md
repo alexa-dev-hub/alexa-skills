@@ -8,7 +8,7 @@ You should have a Amazon Developer account, if you don't have one [Sign Up](http
 It is expected that you have a basic knowledge as to how a skill works, what are intents and slots, and basic understanding of NodeJS or Python.
 Get a refresher with this video. (Note: The video is a bit old. A few things have changed in the console as of now.)
 
-<iframe src="https://youtube.com/embed/q-mrSBrlDso"  height = "100%" width= "100%"></iframe>
+<iframe src="https://youtube.com/embed/q-mrSBrlDso" ></iframe>
 
 **Excited?**  
 Let's get started!
@@ -158,10 +158,10 @@ Watch this video if you aren't clear what exactly does API mean.
 
 <iframe width="100%" height = "100%" src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
 
-
 So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to get total current cases. The following is the response from the API.
+
 ```json
-   {
+{
   "Total": 59363814,
   "All": 169124,
   "AllUpdated": "2020-04-13 05:54:20 +0000 UTC",
@@ -193,6 +193,7 @@ So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to 
   "SummaryUpdated": "2020-04-13 05:54:20 +0000 UTC"
 }
 ```
+
 We will extract the first key-value (i.e Total). But before moving to the code part we need to create an interaction model. In your console create an intent named 'TotalCasesIntent' and give some relevent sample utterances of your choice. Click 'Save Model' and then 'Build Model'.
 Your interaction model is ready, let's move to the code now.
 
@@ -200,7 +201,7 @@ Your interaction model is ready, let's move to the code now.
 
 Making a call to an API requires usage of some additional libraries. We install those libraries with the help of Node Package Manager (npm). We require just one library here named [axios](https://www.npmjs.com/package/axios).
 In you terminal, you are inside your skill's directory ('skill_name' folder), now type the following command to install axios:
-```npm install axios --save```
+`npm install axios --save`
 The '--save' will add axios in the list of dependencies in package.json
 
 We create a function named getData() which will fetch data from our API.
@@ -216,7 +217,8 @@ Now let's here is our getData() function:
 ```javascript
 const getData = async () => {
   const url = "https://api.covid19api.com/stats";
-  return axios.get(url)
+  return axios
+    .get(url)
     .then((response) => {
       return response.data["Total"];
     })
@@ -225,16 +227,18 @@ const getData = async () => {
     });
 };
 ```
-**Let's Understand this snippet:** The 'axios.get(url)' will return a promise which says that this command will either give a response or not. Now if we get a response the '.then()' statement runs within which we have written a callback function: 
+
+**Let's Understand this snippet:** The 'axios.get(url)' will return a promise which says that this command will either give a response or not. Now if we get a response the '.then()' statement runs within which we have written a callback function:
 
 ```javascript
 (response) => {
-   return response.data['Total']
-}
+  return response.data["Total"];
+};
 ```
+
 This returns back the total case count value which was present in data with key value of 'Total'. (as we saw earlier).
 
-Okay so now in our 'TotalCasesIntentHandler' when the handle part is called we see we are calling the getData() function. Since this is an asynchronous function we need to *wait* for the response hence we used 'await'. As we used await inside our 'handle' function we need to declare it an asynchronous function by adding the 'async' keyword before it. Finally we append our total case count value to the 'speakOutput' (using [backticks (`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) notation) which is then returned by the intent handler.
+Okay so now in our 'TotalCasesIntentHandler' when the handle part is called we see we are calling the getData() function. Since this is an asynchronous function we need to _wait_ for the response hence we used 'await'. As we used await inside our 'handle' function we need to declare it an asynchronous function by adding the 'async' keyword before it. Finally we append our total case count value to the 'speakOutput' (using [backticks (`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) notation) which is then returned by the intent handler.
 
 In this way we succesfully return data from our API as Alexa output.
 
@@ -244,4 +248,4 @@ In this way we succesfully return data from our API as Alexa output.
 
 References: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
 
-### Created with 💙 by [Tarun](https://github.com/tarunnsingh).
+### Created with 💙 by [Tarun](https://tarunnsingh.netlify.app).
