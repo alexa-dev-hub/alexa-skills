@@ -8,9 +8,7 @@ You should have a Amazon Developer account, if you don't have one [Sign Up](http
 It is expected that you have a basic knowledge as to how a skill works, what are intents and slots, and basic understanding of NodeJS or Python.
 Get a refresher with this video. (Note: The video is a bit old. A few things have changed in the console as of now.)
 
-<figure class="video_container">
-  <iframe src="https://youtube.com/embed/q-mrSBrlDso" frameborder="0" allowfullscreen="true" width="100%" height="450"> </iframe>
-</figure>
+<iframe src="https://youtube.com/embed/q-mrSBrlDso" frameborder="0" allowfullscreen="true" width="100%" height="450"> </iframe>
 
 **Excited?**  
 Let's get started!
@@ -158,7 +156,7 @@ Now here we will to build an Alexa Skill which fetches data from an API and give
 
 Watch this video if you aren't clear what exactly does API mean.
 
-<iframe  frameborder="0" allowfullscreen="true" width="100%" height="450"src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
+<iframe  frameborder="0" allowfullscreen="true" width="100%" height="450" src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
 
 So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to get total current cases. The following is the response from the API.
 
@@ -246,6 +244,9 @@ In this way we succesfully return data from our API as Alexa output.
 
 ## How do we make a call to an API (Python)
 
+Making a call to an API requires usage of some additional libraries. We install those libraries with the help of 'pip'. We require just one library here named [requests](https://pypi.org/project/requests/).
+In you terminal, you are inside your skill's directory ('skill_name' folder), now type the following command to install axios:
+`pip install requests`. Now we shall add this libraray explicitly in requirements.txt. Add ```requests==2.23.0``` to requirements.txt.
 <hr>
 
 References: [Alexa Skills Kit - Docs](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
