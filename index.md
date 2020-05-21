@@ -8,14 +8,14 @@ You should have a Amazon Developer account, if you don't have one [Sign Up](http
 It is expected that you have a basic knowledge as to how a skill works, what are intents and slots, and basic understanding of NodeJS or Python.
 Get a refresher with this video. (Note: The video is a bit old. A few things have changed in the console as of now.)
 
-<iframe src="https://youtube.com/embed/q-mrSBrlDso" width= "100%">
+<iframe src="https://youtube.com/embed/q-mrSBrlDso"  height = "25%" width= "100%"></iframe>
 
 **Excited?**  
 Let's get started!
 
 ## Install the Alexa Skills Kit CLI
 
-<img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg">
+<img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg" />
 
 CLI stands for **Command Line Interface**, upon installation of which you can easily control your workflow using the command prompt without going to the Alexa Console.
 
@@ -156,7 +156,7 @@ Now here we will to build an Alexa Skill which fetches data from an API and give
 
 Watch this video if you aren't clear what exactly does API mean.
 
-<iframe width="100%" src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
+<iframe width="100%" height = "25%" src="https://www.youtube.com/embed/s7wmiS2mSXY"></iframe>
 
 
 So here we will be using the [Covid19-API](https://api.covid19api.com/stats) to get total current cases. The following is the response from the API.
@@ -209,7 +209,7 @@ We create a function named getData() which will fetch data from our API.
 
 NodeJS works asynchronously and on promises. If you are new to this concept or need a refresher watch this video.
 
-<iframe src="https://youtube.com/embed/vn3tm0quoqE" width="100%">
+<iframe src="https://youtube.com/embed/vn3tm0quoqE" height = "25%" width="100%">
 
 Now let's here is our getData() function:
 
