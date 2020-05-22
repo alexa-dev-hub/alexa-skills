@@ -200,8 +200,7 @@ We will extract the first key-value (i.e Total). But before moving to the code p
 
 In your console create an intent named 'TotalCasesIntent' and give some relevent sample utterances of your choice. Click 'Save Model' and then 'Build Model'.
 
-<img src="./images/ApiSkill-IM.jpg" width = "100%">
-
+<img src="./images/ApiSkill-IM.JPG" width = "100%">
 Your interaction model is ready, let's move to the code now.
 
 ## Call the API using NodeJS (or using [Python](#pointpython))
