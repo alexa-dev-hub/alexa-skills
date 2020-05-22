@@ -1,4 +1,4 @@
-<img src="./Alexa dev Hub.png" height = "70%" width = "100%"/>
+<img src="./Alexa dev Hub.png" height = "70%" width = "100%"/>  
 ## Alexa Dev Hub
 This repostory contains helpful content for Alexa Development.
 Visit [here](https://tarunnsingh.github.io/alexa-dev-hub/).
