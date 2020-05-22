@@ -15,5 +15,5 @@ Please go through the website for the implementation of interaction models and e
 
 ### Want to contribute?
 Add a PR with whataver you would like to contribute.  
-Leave a start if it was helpful.
+Leave a star if it was helpful.  
 _Thank You_
