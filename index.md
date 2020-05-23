@@ -286,7 +286,7 @@ Now we append it to the speakOutput and return the response.
 <hr>
 
 ### <a name="googleform"></a> Please fill the form below.  
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDmiV-3KS49BSJsSb4XiUKyMjZFxzBr44wOBiXdKXlDHj95A/viewform?embedded=true" width="640" height="1463" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDmiV-3KS49BSJsSb4XiUKyMjZFxzBr44wOBiXdKXlDHj95A/viewform?embedded=true" width="100%" frameborder="0">Loading…</iframe>
 
 ### Hope this was helpful!
 ### Have suggestions? Add a PR in [this](https://github.com/tarunnsingh/alexa-dev-hub) repo.
