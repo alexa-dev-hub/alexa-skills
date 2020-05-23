@@ -2,7 +2,7 @@
 
 This page will help you create and develop Alexa Skills and side-by-side also explain the various concepts of coding which you can apply in other development projects too.
 
-## Fill the [Google Form](#googleform)
+## Fill the [Google Form](https://forms.gle/znGhWzncsfz5BfFf8)
 
 ## Contents:
 1. [Install ASK CLI](#intallaskcli)
@@ -284,9 +284,6 @@ Now we append it to the speakOutput and return the response.
 ## <a name="intentchaining"></a> Intent Chaining
 
 <hr>
-
-### <a name="googleform"></a> Please fill the form below.  
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDmiV-3KS49BSJsSb4XiUKyMjZFxzBr44wOBiXdKXlDHj95A/viewform?embedded=true" width="100%" frameborder="0">Loading…</iframe>
 
 ### Hope this was helpful!
 ### Have suggestions? Add a PR in [this](https://github.com/tarunnsingh/alexa-dev-hub) repo.
