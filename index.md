@@ -331,12 +331,12 @@ Within each of the 3 intents we will have slots. Hence we first create custom sl
 
 In the left pane, beside the 'Slot Type(0)' title, click the **Add** button. Give a 'slot type name' (here I have given FeverCondition) and enter slot values as described below:
 
-<img src="./images/intentchaining/feverslot.jpg">
+<img src="./images/intentchaining/feverslot.JPG">
 
 Now create an intent named 'FeverCheckIntent' and at the bottom provide create a new slot (here I named it as Fevereport) with slot type 'FeverCondition' as created above. Notice that we didn't give any sample utterances, becauses this intent won't be called when the user speaks something first rather when Alexa prompts the user to speak. 
 To do that click on the Slot name 'FeveReport' and fill the page as decribed below.
 
-<img src="./images/intentchaining/slotprompt.jpg">
+<img src="./images/intentchaining/slotprompt.JPG">
 
 Once done with it Click Save Model.
 
