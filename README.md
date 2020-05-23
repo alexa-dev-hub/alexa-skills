@@ -6,7 +6,7 @@ Visit [here](https://tarunnsingh.github.io/alexa-dev-hub/) for explaination.
 
 ## What does this repo provide you?
 The code in this directory conatins different skills and partial codes as explained on the website above. Some of which may not run independently. Mostly, here we have the lambda functions (included in the folder named lambda for every skill)
-Please go through the website for the implementation of interaction models and explaination of logiv behinf the code.  
+Please go through the website for the implementation of interaction models and explaination of logic behind the code.  
 
 ### Contents:
 1. GreetMe Skill
