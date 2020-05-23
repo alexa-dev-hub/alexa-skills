@@ -2,6 +2,15 @@
 
 This page will help you create and develop Alexa Skills and side-by-side also explain the various concepts of coding which you can apply in other development projects too.
 
+## Fill the [Google Form](#googleform)
+
+## Contents:
+1. [Install ASK CLI](#intallaskcli)
+2. [Create a Skill using ASK CLI](#createskill)
+3. [Create an API Skill](#apiskill)
+4. [Intent Chaining](#intentchaining)
+
+
 ### What should I know?
 
 You should have a Amazon Developer account, if you don't have one [Sign Up](https://developer.amazon.com/) for one.  
@@ -13,7 +22,7 @@ Get a refresher with this video. (Note: The video is a bit old. A few things hav
 **Excited?**  
 Let's get started!
 
-## Install the Alexa Skills Kit CLI
+## <a name="intallaskcli"></a> Install the Alexa Skills Kit CLI
 
 <img src="https://i.ytimg.com/vi/Z1pVgsAKmYI/maxresdefault.jpg" />
 
@@ -37,7 +46,7 @@ Let's create a new Skill using the CLI.
 
 <hr>
 
-# Creating a new Skill using ASK CLI (on Alexa-Hosted)
+# <a name="createskill"></a> Creating a new Skill using ASK CLI (on Alexa-Hosted)
 
 To create new skill type tho following command in the CMD/Terminal:  
 `ask new`
@@ -147,7 +156,7 @@ The flow control works as follows: First the **can-handle** runs which returns t
 
 <hr>
 
-# Creating an API Skill
+# <a name="apiskill"></a> Creating an API Skill
 
 Create a basic Hello World template as described above.
 Now here we will to build an Alexa Skill which fetches data from an API and gives the output.
@@ -270,8 +279,13 @@ Now we append it to the speakOutput and return the response.
 
 <hr>
 
+## <a name="intentchaining"></a> Intent Chaining
+
+<hr>
+
+### <a name="googleform"></a> Please fill the form below.  
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDmiV-3KS49BSJsSb4XiUKyMjZFxzBr44wOBiXdKXlDHj95A/viewform?embedded=true" width="640" height="1463" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 ### Hope this was helpful!
-
 ### Have suggestions? Add a PR in [this](https://github.com/tarunnsingh/alexa-dev-hub) repo.
-
 ### Created with 💙 by [Tarun](https://tarunsingh.netlify.app).
