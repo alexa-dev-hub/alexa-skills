@@ -2,7 +2,7 @@
 
 ## Alexa Dev Hub
 This repostory contains helpful content for Alexa Development.
-Visit [here](https://tarunnsingh.github.io/alexa-dev-hub/) for explaination.
+Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
 
 ## What does this repo provide you?
 The code in this directory conatins different skills and partial codes as explained on the website above. Some of which may not run independently. Mostly, here we have the lambda functions (included in the folder named lambda for every skill)
