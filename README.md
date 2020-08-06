@@ -11,7 +11,13 @@ Please go through the website for the implementation of interaction models and e
 ### Contents:
 1. GreetMe Skill
 2. API Skill
-3. Intent Chaining
+3. Intent Chaining (To be Added)
+
+## Guidlines for Adding new Content.
+Once you clone this repo, create a new folder and give it your own name. Eg TARUN.
+Within this folder add a folder named lambda within which you add all your relevant files.   
+(Optional) Also, add a INSTRUCTIONS_BLOG.md file, which will have all the instructions required to re-create the Alexa Skill.
+For example check out the folder **GreetMe-NodeJS/lambda** in this Repo.
 
 ### Want to contribute?
 Add a PR with whataver you would like to contribute.  
