@@ -1,4 +1,4 @@
-<img src="./images/banner.png" height = "70%" width = "100%"/>  
+
 
 ## Alexa Dev Hub
 This repostory contains helpful content for Alexa Development.
