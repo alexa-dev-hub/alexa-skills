@@ -19,6 +19,10 @@ Within this folder add a folder named lambda within which you add all your relev
 (Optional) Also, add a INSTRUCTIONS_BLOG.md file, which will have all the instructions required to re-create the Alexa Skill.
 For example check out the folder **GreetMe-NodeJS/lambda** in this Repo.
 
+
+## Code of Conduct
+In order to ensure that the Alexa Dev Hub Community is welcoming to all, please review and abide by the Code of Conduct.
+
 ### Want to contribute?
 Add a PR with whataver you would like to contribute.  
 Leave a star if it was helpful.  
