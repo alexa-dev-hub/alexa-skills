@@ -16,15 +16,16 @@ Please go through the website for the implementation of interaction models and e
 
 ## Contributing
 
-### Guidlines for adding content.
+Detailed guidlines can be found in **[CONTRIBUTING.md](https://github.com/alexa-dev-hub/alexa-skills/blob/master/CONTRIBUTING.md)**.
 
 Once you fork and clone the repo, you are supposed to add/change information in one of the following 2 folders, depending on your role:
 
 - _skills-by-the-community_
-- _skills-by-the-team_  
-  Make a folder by your name and a `about_me.md` file containing relevant information about you.
-  Add Skills, Blogs etc. in this folder.  
-  Commit, Push and make a PR.
+- _skills-by-the-team_
+
+Make a folder by your name and a `about_me.md` file containing relevant information about you.
+Add Skills, Blogs etc. in this folder.  
+Commit, Push and make a PR.
 
 ## Code of Conduct
 
