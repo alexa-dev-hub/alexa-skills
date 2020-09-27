@@ -1,4 +1,5 @@
-## Alexa Dev Hub <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/avs/docs/ux/branding/mark1._TTH_.png" height="30px" width = "30px">
+<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/avs/docs/ux/branding/mark1._TTH_.png" height="30px" width = "30px">
+## Alexa Dev Hub
 
 This repostory contains helpful content for Alexa Development.
 Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
