@@ -1,4 +1,4 @@
-<img src="https://findvectorlogo.com/wp-content/uploads/2018/11/amazon-alexa-vector-logo.png">
+<img src="https://raw.githubusercontent.com/priyanshsingh/alexa-skills/readme/amazon-alexa-vector-logo.jpg">
 
 ## Alexa Dev Hub
 
