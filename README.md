@@ -1,4 +1,4 @@
-<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/avs/docs/ux/branding/mark1._TTH_.png" height="30px" width = "30px">
+<img src="<img src="https://w7.pngwing.com/pngs/342/167/png-transparent-amazon-alexa-logo-amazon-echo-show-amazon-com-amazon-alexa-voice-command-device-amazon-miscellaneous-blue-text.png">
 ## Alexa Dev Hub
 
 This repostory contains helpful content for Alexa Development.
