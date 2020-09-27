@@ -28,7 +28,7 @@ Make a folder by your name and a `about_me.md` file containing relevant informat
 Add Skills, Blogs etc. in this folder.  
 Commit, Push and make a PR.
 
-## Code of Conduct
+## Code of Conduct :bowtie:
 
 In order to ensure that the Alexa Dev Hub Community is welcoming to all, please review and abide by the Code of Conduct.
 
