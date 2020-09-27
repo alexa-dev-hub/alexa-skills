@@ -1,4 +1,4 @@
-<img src="<img src="https://w7.pngwing.com/pngs/342/167/png-transparent-amazon-alexa-logo-amazon-echo-show-amazon-com-amazon-alexa-voice-command-device-amazon-miscellaneous-blue-text.png">
+<img src="https://w7.pngwing.com/pngs/342/167/png-transparent-amazon-alexa-logo-amazon-echo-show-amazon-com-amazon-alexa-voice-command-device-amazon-miscellaneous-blue-text.png">
 ## Alexa Dev Hub 1
 
 This repostory contains helpful content for Alexa Development.
