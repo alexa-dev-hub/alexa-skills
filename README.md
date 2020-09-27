@@ -15,7 +15,7 @@ Please go through the website for the implementation of interaction models and e
 :point_right: API Skill<br>
 :point_right: Intent Chaining (To be Added)<br>
 
-## Contributing
+## Contributing :two_hearts:
 
 Detailed guidlines can be found in **[CONTRIBUTING.md](https://github.com/alexa-dev-hub/alexa-skills/blob/master/CONTRIBUTING.md)**.
 
