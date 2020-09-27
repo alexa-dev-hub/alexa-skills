@@ -1,4 +1,4 @@
-<img src="https://w7.pngwing.com/pngs/342/167/png-transparent-amazon-alexa-logo-amazon-echo-show-amazon-com-amazon-alexa-voice-command-device-amazon-miscellaneous-blue-text.png">
+<img src="https://findvectorlogo.com/wp-content/uploads/2018/11/amazon-alexa-vector-logo.png">
 
 ## Alexa Dev Hub 1
 
