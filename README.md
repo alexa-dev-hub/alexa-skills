@@ -11,9 +11,9 @@ Please go through the website for the implementation of interaction models and e
 
 ### Contents:
 
-:point_right: 1. GreetMe Skill
-:point_right: 2. API Skill
-:point_right: 3. Intent Chaining (To be Added)
+:point_right: GreetMe Skill<br>
+:point_right: API Skill<br>
+:point_right: Intent Chaining (To be Added)<br>
 
 ## Contributing
 
