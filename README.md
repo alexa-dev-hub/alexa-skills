@@ -1,10 +1,8 @@
 <img src="https://findvectorlogo.com/wp-content/uploads/2018/11/amazon-alexa-vector-logo.png">
 
 ## Alexa Dev Hub
-:octocat:
 
-This repostory contains helpful content for Alexa Development.
-Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
+This repostory contains helpful content for Alexa Development :octocat:. Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
 
 ## What does this repo provide you?
 
