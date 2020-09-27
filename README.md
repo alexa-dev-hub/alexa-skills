@@ -4,7 +4,7 @@
 
 This repostory contains helpful content for Alexa Development :octocat:. Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
 
-## What does this repo provide you?(:hushed:)
+## What does this repo provide you?:hushed:
 
 The code in this directory conatins different skills and partial codes as explained on the website above. Some of which may not run independently. Mostly, here we have the lambda functions (included in the folder named lambda for every skill)
 Please go through the website for the implementation of interaction models and explaination of logic behind the code.
