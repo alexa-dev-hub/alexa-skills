@@ -32,5 +32,5 @@ Commit, Push and make a PR.
 
 In order to ensure that the Alexa Dev Hub Community is welcoming to all, please review and abide by the Code of Conduct.
 
-_Leave a <strong>:star:</strong> if it was helpful._  
-_Thank You_
+<strong>_Leave a :star: if it was helpful._
+_Thank You_</strong> 
