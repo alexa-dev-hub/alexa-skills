@@ -1,0 +1,251 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "covid checkup",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "WhatCanYouDoIntent",
+          "slots": [],
+          "samples": [
+            "I am fine",
+            "I am good",
+            "I am great",
+            "fine",
+            "awesome",
+            "what can you do",
+            "what are your features",
+            "hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "FeverCheckIntent",
+          "slots": [
+            {
+              "name": "FeveReport",
+              "type": "FeverCondition",
+              "samples": [
+                "yes i am sick from {FeveReport}",
+                "i may have {FeveReport}",
+                "i have {FeveReport}",
+                "maybe {FeveReport}"
+              ]
+            }
+          ],
+          "samples": []
+        },
+        {
+          "name": "ColdCheckIntent",
+          "slots": [
+            {
+              "name": "ColdReport",
+              "type": "ColdCondition",
+              "samples": [
+                "i do have {ColdReport}",
+                "{ColdReport}",
+                "i have {ColdReport}"
+              ]
+            }
+          ],
+          "samples": []
+        },
+        {
+          "name": "TravelCheckIntent",
+          "slots": [
+            {
+              "name": "TravelReport",
+              "type": "TravelCondition",
+              "samples": [
+                "{TravelReport}"
+              ]
+            }
+          ],
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no fever",
+                "synonyms": [
+                  "dont have fever"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "moderate fever",
+                "synonyms": [
+                  "medium fever"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "high fever",
+                "synonyms": [
+                  "hot fever",
+                  "very high fever"
+                ]
+              }
+            }
+          ],
+          "name": "FeverCondition"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "severe cold"
+              }
+            },
+            {
+              "name": {
+                "value": "mild cold"
+              }
+            },
+            {
+              "name": {
+                "value": "no cold"
+              }
+            }
+          ],
+          "name": "ColdCondition"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no",
+                "synonyms": [
+                  "i did not travel"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "yes",
+                "synonyms": [
+                  "i have travelled"
+                ]
+              }
+            }
+          ],
+          "name": "TravelCondition"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "FeverCheckIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "FeveReport",
+              "type": "FeverCondition",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1304230276883.1191865317522"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ColdCheckIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "ColdReport",
+              "type": "ColdCondition",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.618679495060.208490573670"
+              }
+            }
+          ]
+        },
+        {
+          "name": "TravelCheckIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "TravelReport",
+              "type": "TravelCondition",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1520257343928.976621735355"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1304230276883.1191865317522",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you have symptoms of fever?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Do you have fever?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.618679495060.208490573670",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you have any conditions of common cold?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Do you have cold?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1520257343928.976621735355",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Have you travelled outside India, recently?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Do you have a past travel history?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "5"
+}

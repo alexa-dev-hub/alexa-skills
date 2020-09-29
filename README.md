@@ -1,29 +1,36 @@
-
+<img src="https://raw.githubusercontent.com/priyanshsingh/alexa-skills/readme/amazon-alexa-vector-logo.jpg">
 
 ## Alexa Dev Hub
-This repostory contains helpful content for Alexa Development.
-Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
 
-## What does this repo provide you?
+This repostory contains helpful content for Alexa Development :octocat:. Visit [here](http://alexadevhub.herokuapp.com/) for detailed explanation on how to create Alexa Skills.
+
+## What does this repo provide you? :hushed:
+
 The code in this directory conatins different skills and partial codes as explained on the website above. Some of which may not run independently. Mostly, here we have the lambda functions (included in the folder named lambda for every skill)
-Please go through the website for the implementation of interaction models and explaination of logic behind the code.  
+Please go through the website for the implementation of interaction models and explaination of logic behind the code.
 
 ### Contents:
-1. GreetMe Skill
-2. API Skill
-3. Intent Chaining (To be Added)
 
-## Guidlines for Adding new Content.
-Once you clone this repo, create a new folder and give it the name of your skill.
-Within this folder add a folder named lambda within which you add all your relevant files.   
-(Optional) Also, add a INSTRUCTIONS_BLOG.md file, which will have all the instructions required to re-create the Alexa Skill.
-For example check out the folder **GreetMe-NodeJS/lambda** in this Repo.
+:point_right: GreetMe Skill<br>
+:point_right: API Skill<br>
+:point_right: Intent Chaining (To be Added)<br>
 
+## Contributing :two_hearts:
 
-## Code of Conduct
+Detailed guidlines can be found in **[CONTRIBUTING.md](https://github.com/alexa-dev-hub/alexa-skills/blob/master/CONTRIBUTING.md)**.
+
+Once you fork and clone the repo, you are supposed to add/change information in one of the following 2 folders, depending on your role:
+
+- _skills-by-the-community_
+- _skills-by-the-team_
+
+Make a folder by your name and a `about_me.md` file containing relevant information about you.
+Add Skills, Blogs etc. in this folder.  
+Commit, Push and make a PR.
+
+## Code of Conduct :bowtie:
+
 In order to ensure that the Alexa Dev Hub Community is welcoming to all, please review and abide by the Code of Conduct.
 
-### Want to contribute?
-Add a PR with whataver you would like to contribute.  
-Leave a star if it was helpful.  
-_Thank You_
+<strong>_Leave a :star: if it was helpful._<br>
+_Thank You_</strong> 
