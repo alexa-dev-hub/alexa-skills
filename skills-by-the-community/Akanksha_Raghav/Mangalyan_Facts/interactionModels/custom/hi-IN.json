@@ -1,0 +1,39 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "मंगलयान facts",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [],
+          "samples": [
+            "मंगलयान facts",
+            "मुझे एक fact बताओ ",
+            "मुझे मंगलयान के बारे में एक fact बताओ",
+            "मुझे मंगलयान के बारे में एक बताओ",
+            "मंगलयान के बारे में बताओ",
+            "मंगलयान"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "2"
+}

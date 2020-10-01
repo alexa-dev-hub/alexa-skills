@@ -1,0 +1,118 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "seven wonders",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "IntroIntent",
+          "slots": [],
+          "samples": [
+            "wonders of the world",
+            "seven wonders ",
+            "tell me about seven wonders",
+            "what are seven wonders",
+            "tell me about wonders of the world"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "TajMahalIntent",
+          "slots": [],
+          "samples": [
+            "tell me about taj mahal",
+            "taj mahal"
+          ]
+        },
+        {
+          "name": "ColosseumIntent",
+          "slots": [],
+          "samples": [
+            "tell me about Colosseum",
+            "Colosseum"
+          ]
+        },
+        {
+          "name": "PetraIntent",
+          "slots": [],
+          "samples": [
+            "tell me about petra",
+            "petra"
+          ]
+        },
+        {
+          "name": "MachuPicchuIntent",
+          "slots": [],
+          "samples": [
+            "tell me about machu picchu",
+            "machu picchu"
+          ]
+        },
+        {
+          "name": "ChristtheRedeemerIntent",
+          "slots": [],
+          "samples": [
+            "tell me about Christ the Redeemer",
+            "Christ the Redeemer"
+          ]
+        },
+        {
+          "name": "ElCastilloIntent",
+          "slots": [],
+          "samples": [
+            "tell me about El Castillo",
+            "El Castillo"
+          ]
+        },
+        {
+          "name": "GreatWallofChinaIntent",
+          "slots": [],
+          "samples": [
+            "tell me about great wall of china ",
+            "great wall of china "
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "4"
+}
