@@ -1,0 +1,1 @@
+Seven Wonders is an Alexa skill that tells different facts of 7 wonders of the world with interactive visual images.
