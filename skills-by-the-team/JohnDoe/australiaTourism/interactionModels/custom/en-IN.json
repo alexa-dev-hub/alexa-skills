@@ -1,0 +1,109 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my guide",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ListPlacesIntent",
+          "slots": [],
+          "samples": [
+            "places to visit in australia",
+            "tourist spots in australia",
+            "where can i go for the weekend"
+          ]
+        },
+        {
+          "name": "DestinataionDescriptionIntent",
+          "slots": [
+            {
+              "name": "cityname",
+              "type": "AMAZON.City",
+              "samples": [
+                "i said {cityname}",
+                "it was {cityname}",
+                "{cityname}",
+                "oh it {cityname}"
+              ]
+            }
+          ],
+          "samples": [
+            "i want to know about {cityname}",
+            "what about {cityname}",
+            "tell me something about {cityname}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "DestinataionDescriptionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "cityname",
+              "type": "AMAZON.City",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.241130040669.376273317734"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.241130040669.376273317734",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please repeat the name of the city"
+          },
+          {
+            "type": "PlainText",
+            "value": "can you please tell me about the city name"
+          },
+          {
+            "type": "PlainText",
+            "value": "can you place say the name of the city"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}
