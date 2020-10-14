@@ -1,0 +1,430 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "guess my character",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CharacterDescriptionIntent",
+          "slots": [
+            {
+              "name": "color",
+              "type": "AMAZON.Color",
+              "samples": [
+                "it would be {color}",
+                "i like {color}",
+                "{color}"
+              ]
+            },
+            {
+              "name": "country",
+              "type": "AMAZON.Country",
+              "samples": [
+                "it is {country}",
+                "{country}",
+                "i live in {country}"
+              ]
+            },
+            {
+              "name": "age",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "i am of {age}",
+                "my age is {age}",
+                "i am {age}",
+                "i am {age} years old",
+                "{age}"
+              ]
+            },
+            {
+              "name": "gender",
+              "type": "GenderType",
+              "samples": [
+                "a {gender}",
+                "i am {gender}",
+                "i am a {gender}",
+                "{gender}"
+              ]
+            },
+            {
+              "name": "book",
+              "type": "AMAZON.Book",
+              "samples": [
+                "i like {book}",
+                "i read {book}",
+                "my favourite book is {book}",
+                "i like reading  {book}"
+              ]
+            }
+          ],
+          "samples": [
+            "my favourite book is {book}",
+            "i loved reading {book}",
+            "i like to read {book}",
+            "i love {color} color",
+            "i love {color}",
+            "i like {color}",
+            "my age is {age}",
+            "i am {age} years old",
+            "i like {color} and I am a {gender}",
+            "I am a {gender}",
+            "i like {color} color I live in {country} and I am {age} years old",
+            "my age is {age} and I live in {country}",
+            "I live in {country}",
+            "my favourite color is {color}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "0",
+              "name": {
+                "value": "girl",
+                "synonyms": [
+                  "female",
+                  "madam",
+                  "her",
+                  "woman",
+                  "she",
+                  "lady"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "boy",
+                "synonyms": [
+                  "male",
+                  "sir",
+                  "guy",
+                  "man"
+                ]
+              }
+            }
+          ],
+          "name": "GenderType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CharacterDescriptionIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1370543334028"
+          },
+          "slots": [
+            {
+              "name": "color",
+              "type": "AMAZON.Color",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1370543334028.473123770178"
+              },
+              "validations": [
+                {
+                  "type": "isInSet",
+                  "prompt": "Slot.Validation.1370543334028.473123770178.1061202387585",
+                  "values": [
+                    "red",
+                    "orange",
+                    "green",
+                    "blue",
+                    "yellow",
+                    "black"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "country",
+              "type": "AMAZON.Country",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1370543334028.486783981105"
+              }
+            },
+            {
+              "name": "age",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1370543334028.729246040602"
+              },
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.1370543334028.729246040602.372078398388",
+                  "value": "5"
+                },
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.1370543334028.729246040602.172213826891",
+                  "value": "110"
+                }
+              ]
+            },
+            {
+              "name": "gender",
+              "type": "GenderType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1370543334028.430806852101"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1370543334028.430806852101.467858566964"
+                }
+              ]
+            },
+            {
+              "name": "book",
+              "type": "AMAZON.Book",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.140128321018.571894741159"
+              },
+              "validations": [
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.140128321018.571894741159.196296837204",
+                  "values": [
+                    "mathematics",
+                    "maths",
+                    "physics",
+                    "history"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1370543334028.473123770178",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I got that you love {book} , and what color do you like?"
+          },
+          {
+            "type": "PlainText",
+            "value": "I got it that you are from {country} , what color do you like?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Okay you are a {gender} , what is your favourite color?"
+          },
+          {
+            "type": "PlainText",
+            "value": "okay, you are {age} years old and what is your favourite color?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What color do you like the most?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What is your favourite color?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1370543334028.473123770178.1061202387585",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "You can say any red, green, blue, orange, yellow, black and green. what color is your favourite?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1370543334028.486783981105",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "which country do you live in?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Even {color} is my favourite, by the way which country do you live in?"
+          },
+          {
+            "type": "PlainText",
+            "value": "And this {age} year old {gender} lives in which country?"
+          },
+          {
+            "type": "PlainText",
+            "value": "which country does this {gender} live in?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what is the name of your country?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what country do you live in?"
+          },
+          {
+            "type": "PlainText",
+            "value": "where do you live?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1370543334028.729246040602",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "and what is your age?"
+          },
+          {
+            "type": "PlainText",
+            "value": "I got that you live in {country} , what is your age?"
+          },
+          {
+            "type": "PlainText",
+            "value": "how old are you?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what is your age?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1370543334028.729246040602.372078398388",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "You are too young. Continue if you are above five year old. What is your age?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1370543334028.729246040602.172213826891",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That dosent look like your age. What is your actual age?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1370543334028.430806852101",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "your age is {age} and are you a boy or a girl?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what is your gender?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Are you a boy or a girl?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1370543334028",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "You are a {gender} , you like {color} color, you like reading {book} , you live in {country} and you are {age} years old. Am I correct?"
+          },
+          {
+            "type": "PlainText",
+            "value": "You are a {gender} , you like reading {book} , you like {color} color, you live in {country} and you are {age} years old. Is that right?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1370543334028.430806852101.467858566964",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "That is not a gender, Please tell me what is your gender?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.140128321018.571894741159",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what book do you love?"
+          },
+          {
+            "type": "PlainText",
+            "value": "and what book you read?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what fictional novel is your favourite?"
+          },
+          {
+            "type": "PlainText",
+            "value": "which book do you read?"
+          },
+          {
+            "type": "PlainText",
+            "value": "what is your favourite book?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.140128321018.571894741159.196296837204",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Hey thats not fictional literature. what other books do you read?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "4"
+}
